@@ -1,5 +1,5 @@
 const CANVAS_SIZE = 280;
-const CANVAS_IMG_SCALE = 1;
+const CANVAS_SCALE = 0.8;
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -71,15 +71,15 @@ function canvasMouseDown(event) {
         clearCanvas();
         hasIntroText = false;
     }
-    const x = event.offsetX / CANVAS_IMG_SCALE;
-    const y = event.offsetY / CANVAS_IMG_SCALE;
+    const x = event.offsetX / CANVAS_SCALE;
+    const y = event.offsetY / CANVAS_SCALE;
 
     drawLine(x, y, x + 1, y + 1)
 }
 
 function canvasMouseMove(event) {
-    const x = event.offsetX / CANVAS_IMG_SCALE;
-    const y = event.offsetY / CANVAS_IMG_SCALE;
+    const x = event.offsetX / CANVAS_SCALE;
+    const y = event.offsetY / CANVAS_SCALE;
     if (isMouseDown) {
         drawLine(lastX, lastY, x, y);
     }

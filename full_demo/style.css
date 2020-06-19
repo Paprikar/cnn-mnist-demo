@@ -33,8 +33,8 @@ body {
 
 .canvas {
     border-radius: 4px;
-    height: 280px;
-    width: 280px;
+    height: 224px;
+    width: 224px;
     cursor: crosshair;
 }
 
@@ -51,7 +51,7 @@ body {
     text-align: center;
     transition: box-shadow 0.05s cubic-bezier(0.4, 0, 0.2, 1);
     user-select: none;
-    width: 280px;
+    width: 224px;
 }
 
 .button:hover {
@@ -71,14 +71,22 @@ body {
 }
 
 .prediction-col {
-    padding: 6px 3px 0;
+    padding: 4px 2px 0;
+}
+
+#prediction-0 {
+    padding-left: 4px;
+}
+
+#prediction-9 {
+    padding-right: 4px;
 }
 
 .prediction-bar-container {
     background: #cdcdcd;
     border-radius: 4px 4px 0 0;
-    height: 280px;
-    width: 21.4px;
+    height: 224px;
+    width: 18px;
     position: relative;
 }
 
